@@ -1,7 +1,7 @@
 {
-  "name": "lp-pwa-module-boilerplate",
+  "name": "@geins/ralph-module-tiktok",
   "version": "1.0.0",
-  "description": "Boilerplate for creating a module for Geins PWA strorefront",
+  "description": "TikTok module for Geins PWA Storefront Ralph",
   "author": {
     "name": "arvidsson-geins"
   },
@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "nuxt test/fixture",
     "publish": "npm publish --access public",
-    "test": "jest",    
+    "test": "jest",
     "test:unit": "jest --testRegex \"/test/unit/(.+)\\.test\\.js$\"",
     "test:system": "jest --testRegex \"/test/system/(.+)\\.test\\.js$\"",
     "test:coverage": "yarn test --coverage",
