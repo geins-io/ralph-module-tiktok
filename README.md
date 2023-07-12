@@ -30,7 +30,8 @@ Add the module to your Geins PWA Storefront Ralph by adding the following line t
       {
           enabled: true,
           debug: true,
-          pixelId: 'your tiktok pixel ID'
+          pixelId: 'your tiktok pixel ID',
+          trackEvents: true
       }
     ]
   ]
@@ -82,9 +83,10 @@ Set the `widgetRenderTypesComponents` in your `nuxt.config.json` file to use the
 Add extra options to module configuration in `nuxt.config.js` file.
 | Parameter | Default | Required | Example |
 |-|-|-|-|
-| enabled | `true` | No | Enables the module|
+| enabled | `true` | No | Enables the module |
 | debug | `true` | No | Enables debug info to console |
-| pixelId | none | Yes | Your company's Tiktok Pixel ID [TikTok Ads Manager](https://ads.tiktok.com) |
+| pixelId | none | No | Your company's Tiktok Pixel ID [TikTok Ads Manager](https://ads.tiktok.com) |
+| trackEvents | `false` | No | If set to `true`, events like addToCart, viewedProduct etc will be tracked |
 
 ## Usage
 
