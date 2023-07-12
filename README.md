@@ -1,10 +1,3 @@
-[![NPM Package][npm]][npm-url]
-[![NPM Downloads][npm-downloads-per-month]][npm-trends]
-![Geins][mit-shield]
-
-[![Start Geins Free Trial][geins-tiral-img]][geins-tiral-url] [![Geins Docs][geins-docs-img]][geins-docs-url]
-
-[![geins-tiktok]()](https://www.geins.io)
 
 # Tiktok module for Geins PWA Storefront
 
@@ -44,7 +37,7 @@ Add the module to your Geins PWA Storefront Ralph by adding the following line t
 ```
 ## Event tracking with TikTok Pixel
 
-If a `pixelId` is added as a nodule option, then tracking via TikTok will be enabled. Set up events to track and get your Pixel Id from the TikTok Ads Manager page. If no pixelId is added as an option, live tracking will not be enabled.
+If `pixelId` is added as a module option, then tracking via TikTok will be enabled. Set up events to track and get your Pixel Id from the TikTok Ads Manager page. If no pixelId is added, live tracking will not be enabled.
 
 ## To use with Geins CMS (no-code)
 
