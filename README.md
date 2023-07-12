@@ -30,7 +30,8 @@ Add the module to your Geins PWA Storefront Ralph by adding the following line t
       {
           enabled: true,
           debug: true,
-          pixelId: 'your tiktok pixel ID'
+          pixelId: 'your tiktok pixel ID',
+          trackEvents: true
       }
     ]
   ]
