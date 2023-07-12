@@ -6,7 +6,8 @@ A module for Geins PWA Storefront Ralph that adds Tiktok event tracking as well 
 ## Pre-requisites
 
 - Geins Account and PWA Storefront Ralph. [Get a free trial here](https://www.geins.io)
-- TikTok Ads Manager Account. [Get account here](https://ads.tiktok.com/i18n/home)
+- For tracking: TikTok Ads Manager Account. [Get account here](https://ads.tiktok.com/i18n/home)
+- For showing content: Tiktok for Developers [Get account here](https://developers.tiktok.com/)
 
 ## Description
 
@@ -38,7 +39,20 @@ Add the module to your Geins PWA Storefront Ralph by adding the following line t
 ```
 ## Event tracking with TikTok Pixel
 
-If `pixelId` is added as a module option, then tracking via TikTok will be enabled. Set up events to track and get your Pixel Id from the TikTok Ads Manager page. If no pixelId is added, live tracking will not be enabled.
+To enable tracking you will need to add both your `pixelId` and `trackEvents: true` to your module options.
+
+The ralph events that will be tracked are:
+
+| Type of activity  | Event tracked                                   | Information sent |
+| ----------------- | ------------------------------------------------| ------------------- |
+| Add to cart       | User adds a product to the cart                 | Sku ID, quantity, product name |
+| Favorited product | User adds a product to their Favorites          | Product ID  |
+| Checkout started  | User clicks on "go to checkout" | Sku ID, quantity, product name for all items in the cart  |
+| Viewed product  | User navigates to a product page                         | Product ID, product name    |
+| Purchase completed | User checks out their cart and pays | -- |
+| Newsletter subscribed | User subscribes to newsletter | -- |
+| User registers | User registers new account | -- |
+
 
 ## To use with Geins CMS (no-code)
 
