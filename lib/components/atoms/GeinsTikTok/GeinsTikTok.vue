@@ -1,7 +1,5 @@
 <template>
-    <div>
-        tiktok
-    </div>
+    <div>tiktok</div>
 </template>
 <script>
 /* 
