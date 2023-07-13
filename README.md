@@ -1,19 +1,27 @@
 
 # Tiktok module for Geins PWA Storefront
 
-A module for Geins PWA Storefront Ralph that adds Tiktok event tracking as well as possibilities to display videos on your storefront.
+The Tiktok module is an extension for Geins PWA Storefront Ralph that integrates TikTok Pixel event tracking into your storefront. By leveraging the power of TikTok's advertising platform, you can track and optimize user interactions on your online store.
 
 ## Pre-requisites
 
+Before using the Tiktok module, make sure you have the following:
+
 - Geins Account and PWA Storefront Ralph. [Get a free trial here](https://www.geins.io)
-- For tracking: TikTok Ads Manager Account. [Get account here](https://ads.tiktok.com/i18n/home)
-- For showing content: Tiktok for Developers [Get account here](https://developers.tiktok.com/)
+- TikTok Ads Manager Account. [Get account here](https://ads.tiktok.com/i18n/home)
+
 
 ## Description
 
+The Tiktok module allows you to easily integrate TikTok Pixel event tracking into your Geins PWA Storefront Ralph. It provides a seamless integration that enables you to track various user actions on your online store and optimize your advertising campaigns on TikTok.
+
 ## Installation
 
+To install the Tiktok module, follow these steps:
+
 ### 1. Install the module
+
+Open your terminal and run the following command:
 
 ```bash
 npm i @geins/ralph-module-tiktok
@@ -21,7 +29,7 @@ npm i @geins/ralph-module-tiktok
 
 ### 2. Add the module to your Geins PWA Storefront Ralph
 
-Add the module to your Geins PWA Storefront Ralph by adding the following line to your `nuxt.config.js` file:
+To add the module to your Geins PWA Storefront Ralph, open your `nuxt.config.js` file and add the following code snippet:
 
 ```js
 ...
@@ -32,16 +40,21 @@ Add the module to your Geins PWA Storefront Ralph by adding the following line t
           enabled: true,
           debug: true,
           pixelId: 'your tiktok pixel ID',
-          trackEvents: true
+          trackEvents: false
       }
     ]
   ]
 ```
 ## Event tracking with TikTok Pixel
 
-To enable tracking you will need to add both your `pixelId` and `trackEvents: true` to your module options.
+To track various user events on your online store, such as add to cart, favorited product, checkout started, viewed product, purchase completed, newsletter subscribed, and user registration, you need to set up event tracking with TikTok Pixel. Here's how you can do it:
 
-The ralph events that will be tracked are:
+1. If you don't already have a TikTok Pixel ID, you need to obtain one through your TikTok Ads Manager account. You can find detailed instructions on how to get started with the TikTok Pixel [here](https://ads.tiktok.com/help/article/get-started-pixel?lang=en)
+2. Once you have your TikTok Pixel ID, add it to the `pixelId` option in the module configuration
+3. If you want to track ralph-events, set the `trackEvents` option to `true` in the module configuration.
+
+The Tiktok module will then track the following ralph events:
+
 
 | Type of activity  | Event tracked                                   | Information sent |
 | ----------------- | ------------------------------------------------| ------------------- |
@@ -53,45 +66,6 @@ The ralph events that will be tracked are:
 | Newsletter subscribed | User subscribes to newsletter | -- |
 | User registers | User registers new account | -- |
 
-
-## To use with Geins CMS (no-code)
-
-#### 1. Add the module to your Geins PWA Storefront Ralph
-
-Use the [@geins/ralph-module-cms-json-container](https://www.npmjs.com/package/@geins/ralph-module-cms-json-container)
-
-```bash
-npm i @geins/ralph-module-cms-json-container
-```
-
-#### 2. Add the module to your Geins PWA Storefront Ralph
-
-Add module to your `nuxt.config.js` file:
-
-```js
-// nuxt.config.js
-
-...
-    modules: [
-      '@geins/ralph-module-cms-json-container'
-    ]
-..
-```
-
-Set the `widgetRenderTypesComponents` in your `nuxt.config.json` file to use the `GeinsWidgetJsonContainer` component for the `JSON` widget type.
-
-```js
-// nuxt.config.js
-
-...
-  publicRuntimeConfig: {
-      widgetRenderTypesComponents: {
-        JSON: 'GeinsWidgetJsonContainer'
-      },
-  }
-...
-```
-
 ## Module Options
 
 Add extra options to module configuration in `nuxt.config.js` file.
@@ -100,10 +74,12 @@ Add extra options to module configuration in `nuxt.config.js` file.
 | enabled | `true` | No | Enables the module |
 | debug | `true` | No | Enables debug info to console |
 | pixelId | none | No | Your company's Tiktok Pixel ID [TikTok Ads Manager](https://ads.tiktok.com) |
-| trackEvents | `false` | No | If set to `true`, events like addToCart, viewedProduct etc will be tracked |
+| trackEvents | `false` | No | If set to `true`, ralph events will be tracked |
 
 ## Usage
 
+The Tiktok module seamlessly integrates with your Geins CMS. You can use it to track various user events and optimize your TikTok advertising campaigns based on the collected data.
+
 ## Components
 
-#### Use with Geins CMS
+The Tiktok module does not introduce any new components. It enhances the functionality of your Geins PWA Storefront Ralph by adding TikTok Pixel event tracking capabilities.
