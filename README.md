@@ -1,3 +1,11 @@
+[![NPM Package][npm]][npm-url]
+[![NPM Downloads][npm-downloads-per-month]][npm-trends]
+![Geins][mit-shield]
+
+[![Start Geins Free Trial][geins-tiral-img]][geins-tiral-url] [![Geins Docs][geins-docs-img]][geins-docs-url]
+
+[![geins-tiktok](https://raw.githubusercontent.com/geins-io/resources/master/images/banners/repos/geins-tiktok.jpg)](https://www.geins.io)
+
 
 # Tiktok module for Geins PWA Storefront
 
@@ -83,3 +91,14 @@ The Tiktok module seamlessly integrates with your Geins CMS. You can use it to t
 ## Components
 
 The Tiktok module does not introduce any new components. It enhances the functionality of your Geins PWA Storefront Ralph by adding TikTok Pixel event tracking capabilities.
+
+[npm]: https://img.shields.io/npm/v/@geins/ralph-module-tiktok
+[npm-url]: https://www.npmjs.com/package/@geins/ralph-module-tiktok
+[npm-downloads-per-month]: https://img.shields.io/npm/dm/@geins/ralph-module-tiktok.svg
+[npm-trends]: https://npmtrends.com/@geins/ralph-module-tiktok
+[geins-docs-url]: https://docs.geins.io
+[geins-docs-img]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/geins-io/resources/master/sheilds/geins-docs-read-v3.json
+[geins-tiral-url]: https://www.geins.io
+[geins-tiral-img]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/geins-io/resources/master/sheilds/geins-fee-tiral.json
+[mit-shield]: https://img.shields.io/badge/license-MIT-green
+[mit-url]: https://en.wikipedia.org/wiki/MIT_License
